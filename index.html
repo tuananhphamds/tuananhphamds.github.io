@@ -1,145 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's CV - Full-Stack Data Scientist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Jack's CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
-            background: #1d3557;
-            color: #f1faee;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 20px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.5em;
         }
 
         header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0 1rem;
-        }
-
-        header .buttons a {
-            background: #e63946;
-            color: #fff;
-            padding: 0.8rem 1.2rem;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 0.5rem;
+            margin: 5px 0 0;
+            font-size: 1em;
+            color: #555;
         }
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             max-width: 1200px;
-            margin: 2rem auto;
-            gap: 2rem;
-            padding: 0 1rem;
+            margin: 20px auto;
+            padding: 0 15px;
         }
 
         .main-content {
             flex: 3;
+            margin-right: 20px;
         }
 
         .sidebar {
             flex: 1;
-            text-align: center;
+            max-width: 300px;
         }
 
         .sidebar img {
             width: 100%;
-            max-width: 200px;
-            border-radius: 10px;
+            border-radius: 8px;
+        }
+
+        .sidebar p {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
         }
 
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 30px;
         }
 
         section h2 {
-            color: #1d3557;
-            margin-bottom: 0.5rem;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0078d7;
+            display: inline-block;
         }
 
-        .research ul {
-            list-style-type: disc;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
             padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '\2022';
+            color: #0078d7;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
         }
 
         footer {
-            background: #1d3557;
-            color: #f1faee;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 10px;
+            background: #0078d7;
+            color: #fff;
+            position: relative;
         }
 
-        footer a {
-            color: #e63946;
+        a {
+            color: #0078d7;
             text-decoration: none;
         }
 
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Jack - Full-Stack Data Scientist</h1>
-        <p>Turning data into impactful insights and scalable solutions</p>
-        <div class="buttons">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-        </div>
+        <h1>Jack Nguyen</h1>
+        <p>Email: jack.nguyen@example.com</p>
+        <p>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
     </header>
 
     <div class="container">
         <div class="main-content">
-            <section class="about">
+            <section>
                 <h2>About Me</h2>
-                <p>Hello! I'm Jack, a passionate full-stack data scientist with expertise in machine learning, data visualization, and scalable software solutions. I thrive on solving complex problems and turning data into actionable insights.</p>
+                <p>
+                    I am a Fullstack Data Scientist with extensive experience in developing machine learning models,
+                    data pipelines, and building end-to-end web applications. Passionate about combining technology and
+                    creativity to deliver impactful solutions.
+                </p>
             </section>
 
-            <section class="research">
+            <section>
                 <h2>Research Highlights</h2>
                 <ul>
-                    <li>Developed a scalable AI pipeline for data processing and visualization.</li>
-                    <li>Published research on deep learning optimization techniques.</li>
-                    <li>Designed a real-time predictive model for healthcare analytics.</li>
+                    <li>Developed advanced deep learning pipelines for real-time data analytics.</li>
+                    <li>Implemented scalable fullstack applications with Flask and React.</li>
+                    <li>Collaborated with cross-functional teams to optimize machine learning workflows.</li>
+                    <li>Presented research findings at international conferences.</li>
                 </ul>
             </section>
 
-            <section class="skills">
-                <h2>Skills</h2>
+            <section>
+                <h2>Recent News</h2>
                 <ul>
-                    <li>Python (Expert)</li>
-                    <li>Machine Learning & AI</li>
-                    <li>Full-Stack Web Development (React, Flask)</li>
-                    <li>Data Visualization (Tableau, D3.js)</li>
+                    <li>2024-12-01: Presented "AI for Social Good" at TechCon 2024.</li>
+                    <li>2024-11-15: Published research on "Optimizing Data Pipelines" in Data Science Journal.</li>
                 </ul>
             </section>
         </div>
 
         <div class="sidebar">
-            <img src="profile.jpg?v=1.0" alt="Jack's photo">
-            <p>Jack - Full-Stack Data Scientist</p>
+            <img src="profile.jpg?v=1.0" alt="Jack Nguyen">
+            <p>At the heart of innovation, blending science and art to solve real-world problems.</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Jack. Built with ❤️ and GitHub Pages. <a href="#">Back to Top</a></p>
+        &copy; 2024 Jack Nguyen. All Rights Reserved.
     </footer>
 </body>
+
 </html>
