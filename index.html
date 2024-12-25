@@ -3,35 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jack's CV - Full-Stack Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #1d3557;
+            color: #f1faee;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 1rem;
+        }
+
+        header .buttons {
+            margin-top: 1rem;
+        }
+
+        header .buttons a {
+            background: #e63946;
+            color: #fff;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about .text {
+            flex: 1;
+        }
+
+        .about .timeline {
+            flex: 1;
+        }
+
+        .skills, .portfolio, .experience {
+            margin-top: 2rem;
+        }
+
+        .skills .skill {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+        }
+
+        .skills .skill span {
+            flex: 1;
+        }
+
+        .skills .skill .bar {
+            flex: 3;
+            background: #f1faee;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skills .skill .bar span {
+            display: block;
+            height: 100%;
+            background: #457b9d;
+        }
+
+        footer {
+            background: #1d3557;
+            color: #f1faee;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <p>Data Scientist | Python Developer</p>
+        <h1>Jack - Full-Stack Data Scientist</h1>
+        <p>Turning data into impactful insights and scalable solutions</p>
+        <div class="buttons">
+            <a href="#">Download CV</a>
+            <a href="#contact">Contact Me</a>
+        </div>
     </header>
-    <main>
-        <section>
+
+    <section class="about">
+        <div class="text">
             <h2>About Me</h2>
-            <p>I am a passionate data scientist with experience in Python, machine learning, and data visualization.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
+            <p>Hello! I'm Jack, a passionate full-stack data scientist with expertise in machine learning, data visualization, and scalable software solutions. I thrive on solving complex problems and turning data into actionable insights.</p>
+        </div>
+        <div class="timeline">
+            <h2>Timeline</h2>
             <ul>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Data Visualization</li>
+                <li><strong>2020:</strong> Master's in Data Science</li>
+                <li><strong>2021:</strong> Started working as a Full-Stack Data Scientist</li>
+                <li><strong>2023:</strong> Major project: Scalable AI pipelines</li>
             </ul>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <p>Data Scientist at XYZ Company (2018–Present)</p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <span>Python</span>
+            <div class="bar"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill">
+            <span>Machine Learning</span>
+            <div class="bar"><span style="width: 85%;"></span></div>
+        </div>
+        <div class="skill">
+            <span>Full-Stack Development</span>
+            <div class="bar"><span style="width: 80%;"></span></div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <p>Coming Soon!</p>
+    </section>
+
+    <section class="experience">
+        <h2>Experience</h2>
+        <p>Coming Soon!</p>
+    </section>
+
     <footer>
-        <p>Contact me: johndoe@gmail.com</p>
+        <p>&copy; 2024 Jack. Built with ❤️ and GitHub Pages. <a href="#">Back to Top</a></p>
     </footer>
 </body>
 </html>
