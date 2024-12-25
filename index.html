@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            line-height: 1.6;
         }
 
         header {
@@ -30,10 +31,6 @@
             margin: 0.5rem 0 1rem;
         }
 
-        header .buttons {
-            margin-top: 1rem;
-        }
-
         header .buttons a {
             background: #e63946;
             color: #fff;
@@ -43,53 +40,41 @@
             margin: 0 0.5rem;
         }
 
-        section {
-            padding: 2rem 1rem;
+        .container {
+            display: flex;
             max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about {
-            display: flex;
-            flex-wrap: wrap;
+            margin: 2rem auto;
             gap: 2rem;
-            align-items: center;
+            padding: 0 1rem;
         }
 
-        .about .text {
-            flex: 1;
-        }
-
-        .about .timeline {
-            flex: 1;
-        }
-
-        .skills, .portfolio, .experience {
-            margin-top: 2rem;
-        }
-
-        .skills .skill {
-            display: flex;
-            align-items: center;
-            margin: 0.5rem 0;
-        }
-
-        .skills .skill span {
-            flex: 1;
-        }
-
-        .skills .skill .bar {
+        .main-content {
             flex: 3;
-            background: #f1faee;
-            height: 10px;
-            border-radius: 5px;
-            overflow: hidden;
         }
 
-        .skills .skill .bar span {
-            display: block;
-            height: 100%;
-            background: #457b9d;
+        .sidebar {
+            flex: 1;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            color: #1d3557;
+            margin-bottom: 0.5rem;
+        }
+
+        .research ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
 
         footer {
@@ -115,51 +100,43 @@
         <h1>Jack - Full-Stack Data Scientist</h1>
         <p>Turning data into impactful insights and scalable solutions</p>
         <div class="buttons">
-            <a href="#">Download CV</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
         </div>
     </header>
 
-    <section class="about">
-        <div class="text">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jack, a passionate full-stack data scientist with expertise in machine learning, data visualization, and scalable software solutions. I thrive on solving complex problems and turning data into actionable insights.</p>
-        </div>
-        <div class="timeline">
-            <h2>Timeline</h2>
-            <ul>
-                <li><strong>2020:</strong> Master's in Data Science</li>
-                <li><strong>2021:</strong> Started working as a Full-Stack Data Scientist</li>
-                <li><strong>2023:</strong> Major project: Scalable AI pipelines</li>
-            </ul>
-        </div>
-    </section>
+    <div class="container">
+        <div class="main-content">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm Jack, a passionate full-stack data scientist with expertise in machine learning, data visualization, and scalable software solutions. I thrive on solving complex problems and turning data into actionable insights.</p>
+            </section>
 
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <span>Python</span>
-            <div class="bar"><span style="width: 90%;"></span></div>
-        </div>
-        <div class="skill">
-            <span>Machine Learning</span>
-            <div class="bar"><span style="width: 85%;"></span></div>
-        </div>
-        <div class="skill">
-            <span>Full-Stack Development</span>
-            <div class="bar"><span style="width: 80%;"></span></div>
-        </div>
-    </section>
+            <section class="research">
+                <h2>Research Highlights</h2>
+                <ul>
+                    <li>Developed a scalable AI pipeline for data processing and visualization.</li>
+                    <li>Published research on deep learning optimization techniques.</li>
+                    <li>Designed a real-time predictive model for healthcare analytics.</li>
+                </ul>
+            </section>
 
-    <section class="portfolio">
-        <h2>Portfolio</h2>
-        <p>Coming Soon!</p>
-    </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python (Expert)</li>
+                    <li>Machine Learning & AI</li>
+                    <li>Full-Stack Web Development (React, Flask)</li>
+                    <li>Data Visualization (Tableau, D3.js)</li>
+                </ul>
+            </section>
+        </div>
 
-    <section class="experience">
-        <h2>Experience</h2>
-        <p>Coming Soon!</p>
-    </section>
+        <div class="sidebar">
+            <img src="profile.jpg" alt="Jack's photo">
+            <p>Jack - Full-Stack Data Scientist</p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Jack. Built with ❤️ and GitHub Pages. <a href="#">Back to Top</a></p>
